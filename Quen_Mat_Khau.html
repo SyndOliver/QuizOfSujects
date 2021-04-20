@@ -1,0 +1,44 @@
+
+    
+          <!-- main-->
+          <div class="row mt-5" >
+            <!--Aritcle-->
+            <article class="col-lg-12 col-sm-12 col-12" >
+              <main class="">
+                  <div class="container">
+                    <div class="card login-card">
+                      <div class="row no-gutters">
+                        <div class="col-md-5">
+                          <img src="images/85201971_179764090000750_1560964765189144576_n.jpg" alt="login" class="login-card-img">
+                        </div>
+                        <div class="col-md-7">
+                           <div class="card-body">
+                            <div class="brand-wrapper">
+                              <img src="images/logo.png" class="logo">
+                            </div>
+                            <p class="login-card-description">Quên Mật Khẩu</p>
+                            <form name="frmForgot">
+                                <div class="form-group">
+                                  <label for="email" class="sr-only">Email</label>
+                                  <input ng-model ="email" type="email" name="email" id="email" class="form-control" placeholder="Email address">
+                                  <div ng-show = "frmForgot.email.$invalid" class="badge badge-danger font-italic">
+                                    Nhập đúng định dạng Email
+                                  </div>
+                                </div>
+                                <input ng-click="quen()" name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Gửi Mật Khẩu Cho Tui">
+                              </form>
+                              <nav class="login-card-footer-nav">
+                                <a href="#">Terms of use.</a>
+                                <a href="#">Privacy policy</a>
+                              </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </main>
+          </article>
+          
+        </div>
+      <!--Footer-->

@@ -1,0 +1,83 @@
+
+<div class="text-center" ng-show = "!inProgess">
+  <button class="buton" ng-click= "batdau()">
+    <span class="btn__inner">
+      <span class="btn__slide"></span>
+      <span class="btn__content">Wassup ! Nhấn nút đề kiểm tra</span>
+    </span>
+  </button>
+
+</div>
+<div class="div " ng-show = "inProgess">
+  <div class="row mb-3">  
+    
+    <div class="col-lg-12" >
+      <div class="d-flex justify-content-end">
+        <h3><span id="time"></span></h3>
+      </div>
+      <div class="card" ng-repeat = "ch in caccauhoi|limitTo:pageSize:start">
+          <div class="card-header">
+          <div class="row">
+            <div class="col-lg-6">
+              <p> XÂY DỰNG TRANG WEB </p>
+            </div>
+            <div class="col-lg-6 text-right">
+              <p>Hôm nay : {{homnay | date : 'dd-MM-yyyy'}}</p>
+            </div>
+          </div>
+          </div>
+          
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-lg-9 col-10">
+                <p>{{ch.Text}}</p>
+              </div>
+              <div class="col-lg-3 col-2">
+                <span class="badge badge-success float-right">{{ch.Marks}}</span>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <div class="form-check" ng-repeat = "pa in ch.Answers">
+                  <input class="form-check-input" type="radio" name="answer" value="{{pa.Id}}" ng-click ="submit(ch.AnswerId,pa.Id)" >
+                    <label class="form-check-label" for="exampleRadios1">
+                      {{pa.Text}}
+                    </label>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <marquee width="100%" direction="left" >
+              Chúc Bạn May Mắn 👍👍👍👍👍
+              </marquee>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3" >
+    <div class="col-lg-8 text-center">
+      <div class="col-lg-12 text-center">
+        <button ng-click = "first()"  type="button" class="btn btn-outline-success">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+        <button ng-click = "tiep()" type="button" class="btn btn-outline-success">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button  ng-click = "lui()" type="button" class="btn btn-outline-success">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button ng-click = "last()" type="button" class="btn btn-outline-success">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+       </div>
+  
+     </div>
+     <div class="col-lg-4 text-right">
+      <button ng-click ="notice()" ng-disabled = "kiemtra"  type="button" class="btn btn-outline-success">
+        Submit
+      </button>
+     </div>
+  </div>
+</div>

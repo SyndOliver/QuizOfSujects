@@ -1,0 +1,84 @@
+          <main class="container mt-3">
+            <section id="contact" class="contact">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2 class="text-center">Liên Hệ</h2>
+                  <p class="text-center">Bài này là của tui đó nhen copy là túi lại uýnh cho bây giờ</p>
+                </div>
+        
+                <div class="row">
+        
+                  <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                      <div class="address">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h4>Location:</h4>
+                        <p>FPT POLYTECHNIC, QUẬN 12</p>
+                      </div>
+        
+                      <div class="email">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <h4>Email:</h4>
+                        <p>phuctmps13568@fpt.edu.vn</p>
+                      </div>
+        
+                      <div class="phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h4>Call:</h4>
+                        <p>0382355856</p>
+                      </div>
+        
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1326.6453519898575!2d106.62737149558342!3d10.853456902714354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1616852775815!5m2!1svi!2s" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                    </div>
+        
+                  </div>
+        
+                  <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form name="frmLienHe" class="php-email-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="name">Tên Của Bạn</label>
+                          <input name="name" ng-model="tlhientai.hoten" required ng-minlength="3" ng-maxlength="20" class="form-control">
+                            <div ng-show = "frmLienHe.name.$invalid" class="badge badge-danger font-italic">
+                                Nhập tên từ 3 đến 20 ký tự 
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="name">SỐ ĐIỆN THOẠI</label>
+                          <input type="text" ng-model="tlhientai.sdt"  class="form-control" name="phone" required ng-minlength="3" ng-maxlength="12" />
+                          <div ng-show = "frmLienHe.phone.$invalid" class="badge badge-danger font-italic">
+                            Nhập Số Điện Thoại từ 3 đến 12 ký tự 
+                           </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">EMAIL</label>
+                        <input type="email" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Tin Nhắn</label>
+                        <textarea class="form-control" ng-model="tlhientai.mess" name="message" rows="10" required ng-minlength="3" class="form-control"></textarea>
+                        <div ng-show = "frmLienHe.message.$invalid" class="badge badge-danger font-italic">
+                          Nhập tin nhắn đi bạn 
+                         </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Tin nhắn của bản đã được gửi ! Cảm Ơn </div>
+                      </div>
+                      <div class="text-center"><button ng-click = "alert()" type="submit">Gửi Liên Hệ</button></div>
+                    </form>
+                  </div>
+        
+                </div>
+        
+              </div>
+            </section><!-- End Contact Section -->
+      
+          </main>
+
+
+
+ 

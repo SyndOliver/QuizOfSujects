@@ -1,0 +1,59 @@
+
+
+          <main class="container mt-3">
+            <section id="contact" class="contact">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2 class="text-center">Góp ý</h2>
+                  
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form name="frmGopy" class="php-email-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="name">HỌ TÊN</label>
+                          <input name="name" ng-model="tlhientai.hoten" required ng-minlength="3" ng-maxlength="20" class="form-control">
+                            <div ng-show = "frmGopy.name.$invalid" class="badge badge-danger font-italic">
+                                Nhập tên từ 3 đến 20 ký tự 
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="name">Email Của Bạn</label>
+                          <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                          
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Tiêu Đề</label>
+                        <input type="text" ng-model="tlhientai.tieude" class="form-control" name="subject" required ng-minlength="3" ng-maxlength="20" />
+                        <div ng-show = "frmGopy.subject.$invalid" class="badge badge-danger font-italic">
+                          Nhập tiêu đề bạn êi 
+                      </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Nội Dung</label>
+                        <textarea class="form-control"  ng-model="tlhientai.noidund" name="message" rows="10" required ng-minlength="3"  ></textarea>
+                        <div ng-show = "frmGopy.message.$invalid" class="badge badge-danger font-italic">
+                          Nhập tin nhắn đi bạn 
+                         </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+                      <div class="text-center"><button ng-click = "alert()"  type="submit">Gửi Góp Ý</button></div>
+                    </form>
+                  </div>
+        
+                </div>
+        
+              </div>
+            </section><!-- End Contact Section -->
+
+          </main>
+      
+ 

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Trang Chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- AlertSweet -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">  </script>
+    <!-- Angular  -->
+    <script src="angular-1.8.2/angular.js"></script>
+    <script src="angular-1.8.2/angular-route.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/but.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/sucess.css">
+    <link rel="stylesheet" href="css/mohoc.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dangNhap.css">
+        <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body ng-app = "myapp" ng-controller = "ctrl">
+      <div class="container-fluid">
+        <!--Menu-->
+        <div class="row">
+          <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+            <div class="container">
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <a class="navbar-brand text-brand" href="Danh_Muc_Mon_Hoc.html">FPT<span class="color-b">Polytechnic</span></a>
+              <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+                <span class="fa fa-search" aria-hidden="true"></span>
+              </button>
+              <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Danh_Muc_Mon_Hoc.html">Trang Chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!gioithieu">Giới Thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!gopy">Góp Ý</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!hoidap">Hỏi Đáp</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Tài Khoản
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#!dangky">Đăng Ký</a>
+                      <a class="dropdown-item" href="#!dangnhap">Đăng Nhập</a>
+                      <a class="dropdown-item" href="#!quenmatkhau">Quên Mật Khẩu</a>
+                      <a class="dropdown-item" href="Danh_Muc_Mon_Hoc.html">Đăng Xuất</a>
+                      <a class="dropdown-item" href="#!doimatkhau">Đổi Mật Khẩu</a>
+                      <a class="dropdown-item" href="#!suataikhoan">Cập Nhật Tài Khoản</a>
+
+
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!lienhe">Liên Hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+                <span class="fa fa-search" aria-hidden="true"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+          <!-- Header -->
+          <div class="row">
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                  <img src="images/sl1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="images/sl1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/header.jfif" class="d-block w-100" alt="">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- main-->
+          <div class="row mt-5" >
+            <!--Aritcle-->
+            <div class="container-fluid mb-3">
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <a class="weatherwidget-io" href="https://forecast7.com/en/10d82106d63/ho-chi-minh-city/" data-label_1="HO CHI MINH" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-theme="weather_one" >HO CHI MINH WEATHER</a>                  
+                </div>
+              </div>
+            </div>
+            <article class="col-lg-9 col-sm-7 col-8" ng-view>
+             
+               <div class="container"> 
+               </div>
+
+            </article>
+            <!--Aside-->
+            <aside class="col-lg-3  col-sm-5 col-4 ">           
+              <div class="accordion card" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa fa-list" aria-hidden="true"></i> DANH MỤC
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <ul class="list-group">
+                        <!--List môn học -->
+                        <div class="listmonhoc" ng-include = "'cacmonhoc.html'"></div>
+                      </ul>
+                    
+                  </div>
+                </div>
+            
+              </div>
+  
+               
+            </aside>
+            
+        </div>
+      <!--Footer-->
+
+      <footer class="mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="nav-footer">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#">Home</a>o
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Property</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="socials-a">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyright-footer">
+                <p class="copyright color-text-a">
+                  &copy; Copyright
+                  <span class="color-a">PS13568</span> All Rights Reserved.
+                </p>
+              </div>
+              <div class="credits">
+              
+                Designed by PS13568 - Trần Minh Phúc
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="js/Students.js"></script>
+    <script >
+          //weather
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          // weather
+          var app = angular.module("myapp",["ngRoute"]);
+          app.config(function($routeProvider)
+          {
+              $routeProvider //  tạo ứng dụng route định tuyến
+              .when("/gioithieu",{templateUrl:"Gioi_thieu.html"})  // xử lý các route khi được chọn
+              .when("/lienhe",{templateUrl:"Lien_He.html",controller:"lhctrl"})
+              .when("/gopy",{templateUrl:"Gop_Y.html",controller:"gyctrl"})
+              .when("/hoidap",{templateUrl:"Hoi_Dap.html",controller:"hdctrl"})
+              .when("/dangky",{templateUrl:"Dang_Ky.html",controller:"dkyCtrl"})
+              .when("/dangnhap",{templateUrl:"Dang_Nhap.html",controller:"dnCtrl"})
+              .when("/quenmatkhau",{templateUrl:"Quen_Mat_Khau.html",controller:"fgPass"})
+              .when("/doimatkhau",{templateUrl:"Doi_Mat_Khau.html",controller:"changePass"})
+              .when("/suataikhoan",{templateUrl:"Sua_Tai_Khoan.html",controller:"editCtrl"})
+              .when("/success",{templateUrl:"baocao.html"})
+
+              .when("/tracnghiem/:idMH/:tenMH",{templateUrl:"tracnghiem.html",controller:"tnctrl"})
+              .otherwise({templateUrl:"listmonhoc.html"})
+          })
+          // Phần Thay Đổi Mật Khẩu
+          app.controller("changePass",function($scope)
+          {
+            
+            var password = sessionStorage.getItem("password");
+            $scope.pass = password;
+            $scope.update = function(){
+            password = sessionStorage.setItem("password",$scope.newpass);
+            swal("Good job!", "Cập Nhật Thành Công Nè ", "success");
+
+          }
+          })
+          // Phần Trắc Nghiệm
+          app.controller("tnctrl",function($scope,$http,$routeParams)
+          {
+            const startTime = 60;
+              let time = startTime * 60;
+              const countdown = document.getElementById('time');
+              setInterval(updateCountdown, 1000);
+              function updateCountdown() {
+                const minutes = Math.floor(time / 60);
+                let seconds = time % 60;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                countdown.innerHTML = `${minutes}: ${seconds}`;
+                countdown.style.color = "black";
+                time--;
+              }
+              $scope.inProgess = false; // lúc này chưa đc hiện nút Bắt đầu 
+              $scope.batdau = function(){
+                $scope.inProgess = true; // khi nhấn bắt đầu sẽ hiện ra câu hỏi
+              }
+
+              $scope.homnay = new Date(); // hàm lấy ngày 
+
+              $scope.caccauhoi = []; // nơi lưu trữ các câu hỏi
+              $scope.idMH = $routeParams.idMH; // lấy idMH và tenMH từ URL khi được request 
+              $scope.tenMH = $routeParams.tenMH;
+              $http.get("db/Quizs/"+$scope.idMH+".js").then( // $http là iúp tạo các yêu cầu đọc dữ liệu từ server. 
+                                                               //Phương thức get được sử dụng để đọc dữ liệu từ server.
+                  function(d) {$scope.caccauhoi = d.data}, // lấy dữ liệu từ file trùng với idMh và tenMH
+                  function(d) {alert("Lỗi");}
+               );
+               
+               $scope.kiemtra = true;  // hàm kiểm tra nêu chưa nhấn câu hỏi nào 
+               $scope.start = 0;
+               $scope.lui = function(){
+                if($scope.start< $scope.cacmonhoc.length - $scope.pageSize) //kiểm tra nếu số lượng câu hỏi  - pageSize  > cái bắt đầu  // Lấy 3 phần tử, bắt đầu phần tử thứ 4 tính từ cuối mảng
+                {
+                    $scope.start+=$scope.pageSize; // lùi đi 1 câu hỏi
+                }
+                }
+               $scope.tiep = function(){
+                    if($scope.start>0) // nếu start lơn hơn 0 
+                    {
+                        $scope.start-=$scope.pageSize; // tiến 1 câu hoir
+                    }
+                }  
+               $scope.pageSize = 1; // pageSize là lấy 1 phần tử của mạng   lấy một phần tử bắt đầu từ vị trí thứ 1 
+               $scope.prev = function(){
+                  if($scope.start>0)
+                  {
+                      $scope.start-=$scope.pageSize;
+                  }
+                }
+               $scope.first = function(){
+                  $scope.start = 0; //  cho start = 0 lấy câu hỏi đầu tiên 
+                }
+               $scope.last = function(){
+                    sotrang  = Math.ceil($scope.cacmonhoc.length / $scope.pageSize); // ceil trả về số nguyên nhỏ nhất làm tròn
+                    // sotrang là lấy số phần tử trong listcacmonhoc chia cho pageSize 
+                    $scope.start = (sotrang - 1) * $scope.pageSize;
+                } 
+               $scope.score= 0;
+               $scope.submit  =function(AnswerId,id){
+                  $scope.kiemtra = false; // nếu nhấn câu hỏi thì hiện nút submit
+                  var AnswerId = AnswerId; // lấy anserID và id nếu trùng thì cọng cho score 1 điểm
+                  var id=id;
+                  if(AnswerId==id)
+                  {
+                    $scope.score +=1;
+                  }      
+                    
+              }
+               $scope.notice  =function(){ //  hàm thông báo điểm
+                swal({
+                  title: "Bạn Muốn Kết Thúc Kiểm Tra Ư ?",
+                  text: "Chung Tôi Sẽ Ghi Nhận Điểm Của Bạn",
+                  icon: "warning",
+                  buttons: true,
+                  dangerMode: true,
+                })
+                    .then((willDelete) => {
+                      if (willDelete) {
+                        swal("Điểm Của Bạn Là : "+ $scope.score + "/80"  , {
+                          icon: "success",
+                        });
+                        document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html#!/success";
+
+                        
+
+                      } else {
+                        swal("OK Tiếp Tục Làm Bài Đi ");
+                      }
+                    });
+
+
+
+               
+
+
+               
+                } 
+              
+          })
+
+          app.controller("ctrl",function($scope,$http)
+          { 
+              
+              $scope.cacmonhoc = [];
+              $http.get("js/Subjects.js").then(function(d) 
+              {
+                $scope.cacmonhoc = d.data;
+              });
+               $scope.start = 0;
+               $scope.lui = function(){
+                if($scope.start< $scope.cacmonhoc.length - $scope.pageSize)
+                {
+                    $scope.start+=$scope.pageSize;
+                }
+                }
+               $scope.tiep = function(){
+                    if($scope.start>0)
+                    {
+                        $scope.start-=$scope.pageSize;
+                    }
+                }  
+               $scope.pageSize = 4;
+               $scope.prev = function(){
+                  if($scope.start>0)
+                  {
+                      $scope.start-=$scope.pageSize;
+                  }
+                }
+               $scope.first = function(){
+                  $scope.start = 0;
+                }
+               $scope.last = function(){
+                    sotrang  = Math.ceil($scope.cacmonhoc.length / $scope.pageSize);
+                    $scope.start = (sotrang - 1) * $scope.pageSize;
+                } 
+          })
+          // Phần Quên Mật Khẩu
+          app.controller("fgPass",function($scope)
+          {
+                  $scope.quen = function(){
+                    var mail = $scope.email;
+                    var motsv;
+                    for(var i=0 ; i<listsv.length; i++){
+                      motsv = listsv[i];
+                      if(mail==motsv.email)
+                      {
+                          swal("Good job!", "Mật Khẩu Của Bạn Là : " + motsv.password, "success");
+                           break;
+                      }
+                      else{
+                        swal("Oh No!", "Sai Email Nhé " , "error");
+                        break;
+                      }
+                    }
+                  }
+          })       
+          // Phần Sửa Tài Khoản
+          app.controller("editCtrl",function($scope)
+          {
+            var username = sessionStorage.getItem("username");
+            var password = sessionStorage.getItem("password");
+            var email = sessionStorage.getItem("email");
+            var fullname = sessionStorage.getItem("fullname");
+              $scope.user = username;
+              $scope.pass = password;
+              $scope.mail = email;
+              $scope.name = fullname;
+            $scope.update = function(){
+              username = sessionStorage.setItem("username",$scope.user);
+              password = sessionStorage.setItem("password",$scope.pass);
+              email = sessionStorage.setItem("email",$scope.mail);
+              fullname = sessionStorage.setItem("fullname",$scope.name);
+              swal("Good job!", "Cập Nhật Thành Công Nè ", "success");
+              
+            }
+           
+         
+          })
+          // Phần Đăng Nhập
+          app.controller("dnCtrl",function($scope,$http)
+          {
+            $scope.dangNhap = function()
+          {
+            var user = $scope.user;
+            var pass = $scope.pass;
+            var dn =false;
+            var motsv;
+            var username = sessionStorage.getItem("username");
+            var password = sessionStorage.getItem("password");
+            for(var i=0;i<listsv.length;i++)
+            {
+              if(user==username&& pass==password)
+              {
+                    dn = true;
+                    break;
+              }
+              motsv = listsv[i];
+              if(user==motsv.username && pass == motsv.password)
+              {
+                  dn = true;
+                  break;
+              }
+              else{
+                swal("Good job!", "Đăng Nhập Không Công Nè ", "error");
+                break;
+              }
+              
+
+            }
+            if(dn){
+              swal("Good job!", "Đăng Nhập Thành Công Nè ", "success");
+              document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html";
+          }
+
+          }
+          
+          })
+          // Phần Đăng Ký
+          app.controller("dkyCtrl",function($scope)
+          {
+            $scope.insert = function()
+            {
+               
+                
+                sessionStorage.setItem("username",$scope.student.username);
+                sessionStorage.setItem("password",$scope.student.password);
+                sessionStorage.setItem("fullname",$scope.student.fullname);
+                sessionStorage.setItem("email",$scope.student.email);
+                swal("Good job!", "Đăng Ký Thành Công Nè ", "success");
+                document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html#!/dangnhap";
+            }
+            
+            $scope.student = {};
+            $scope.index = -1;
+
+
+            
+         
+          })
+          // Phần Liên Hẹe
+          app.controller("lhctrl",function($scope)
+          {
+            $scope.alert = function(){
+              alert("Đã Gửi Liên Hệ Vui Lòng Kiểm Tra Mail Sau 2 Ngày");
+              document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html";
+            }
+          })
+          // Phần Góp Ý
+          app.controller("gyctrl",function($scope)
+          {
+            $scope.alert = function(){
+              alert("Đã Gửi Hóp Ý Vui Lòng Kiểm Tra Mail Sau 2 Ngày");
+              document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html";
+            }
+          })   
+          // Phần Hỏi Đáp
+          app.controller("hdctrl",function($scope)
+          {
+            $scope.alert = function(){
+              alert("Đã Gửi hỏi Đáp Vui Lòng Kiểm Tra Mail Sau 2 Ngày");
+              document.location ="http://127.0.0.1:5500/Danh_Muc_Mon_Hoc.html";
+            }
+          })
+      </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

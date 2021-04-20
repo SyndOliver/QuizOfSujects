@@ -1,0 +1,67 @@
+
+          <div class="row mt-5" >
+            <!--Aritcle-->
+            <article class="col-lg-12 col-sm-12 col-12">
+              <main class="">
+                  <div class="container">
+                    <div class="card login-card">
+                      <div class="row no-gutters">
+                        <div class="col-md-5">
+                          <img src="images/85201971_179764090000750_1560964765189144576_n.jpg" alt="login" class="login-card-img">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card-body">
+                            <div class="brand-wrapper">
+                              <img src="images/logo.png" class="logo">
+                            </div>
+                            <p class="login-card-description">Cập Nhật Tài Khoản</p>
+                            <form name="frmUpdate">
+                              <div class="form-group">
+                                <label for="email" class="sr-only">Username</label>
+                                <input ng-model = "user" required ng-minlength="3" ng-maxlength="20" type="text" name="user" id="email" class="form-control" placeholder="Username">
+                                <div ng-show = "frmUpdate.user.$invalid" class="badge badge-danger font-italic">
+                                     Username phải trên 3 ký tự
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="email" class="sr-only">Họ và Tên</label>
+                                <input  ng-model = "name" required ng-minlength="3" ng-maxlength="50"   type="text" name="name" id="email" class="form-control" placeholder="Họ và Tên">
+                                  <div ng-show = "frmUpdate.name.$invalid" class="badge badge-danger font-italic">
+                                   Fullname phải trên 3 ký tự
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="email" class="sr-only">Email Adress</label>
+                                <input  ng-model = "mail" ng-pattern="/^[a-zA-Z0-9-]*$/"  type="email" name="email" id="mail" class="form-control" placeholder="Email">
+                                <div ng-show = "frmUpdate.mail.$invalid" class="badge badge-danger font-italic">
+                                  Nhập đúng định dạng Email
+                                </div>
+      
+                              </div>
+                              <div class="form-group mb-4">
+                                <label for="password" class="sr-only">Password</label>
+                                <input  ng-model = "pass" required ng-minlength="3" ng-maxlength="50" type="password" name="pass" id="password" class="form-control" placeholder="Password">
+                                <div ng-show = "frmUpdate.pass.$invalid" class="badge badge-danger font-italic">
+                                    Password phải trên 3 ký tự
+                                </div>
+                              </div>
+                                <input ng-click = "update()" name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Cập Nhật Tài Khoản">
+                              </form>
+                              <nav class="login-card-footer-nav">
+                                <a href="#">Terms of use.</a>
+                                <a href="#">Privacy policy</a>
+                              </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </main>
+          </article>
+            <!--Aside-->
+        
+            
+        </div>
+      <!--Footer-->
+
